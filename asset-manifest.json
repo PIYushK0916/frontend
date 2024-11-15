@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/frontend/static/css/main.f40085b1.css",
+    "main.js": "/frontend/static/js/main.d91749ec.js",
+    "static/media/Raleway.ttf": "/frontend/static/media/Raleway.d8040b0cc740dda7550a.ttf",
+    "static/media/Cambay-Regular.ttf": "/frontend/static/media/Cambay-Regular.b0e53b01d34677a40428.ttf",
+    "static/media/Roboto-Regular.ttf": "/frontend/static/media/Roboto-Regular.27f62b53b93858475a7f.ttf",
+    "static/media/Lato-Regular.ttf": "/frontend/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
+    "static/media/Lato-Bold.ttf": "/frontend/static/media/Lato-Bold.636be8de934918e38ed9.ttf",
+    "index.html": "/frontend/index.html",
+    "main.f40085b1.css.map": "/frontend/static/css/main.f40085b1.css.map",
+    "main.d91749ec.js.map": "/frontend/static/js/main.d91749ec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f40085b1.css",
+    "static/js/main.d91749ec.js"
+  ]
+}
