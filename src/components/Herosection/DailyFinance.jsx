@@ -43,7 +43,7 @@ const DailyFinance = () => {
                 <div className="main w-full h-full px-[10vw] gap-[1vw] flex justify-center items-center">
                     <div className="left pr-[4vw] w-[40%] h-full flex flex-col justify-center items-start">
                         <h1 className='px-4 py-2 bg-zinc-100 font-medium justify-center items-center gap-3 flex text-[#2ab589] rounded-xl'><span><FaCalendarAlt /></span> Secure</h1>
-                        <h1 className='2xl:text-[40px] md:text-[35px] font-medium font-raleway mt-5 leading-[2.4vw]'>Real Esate Meets the <br /> Digital Age</h1>
+                        <h1 className='text-[40px] font-medium font-raleway mt-5 leading-[2.4vw]'>Real Esate Meets the <br /> Digital Age</h1>
                         <h1 className='mt-4 text-zinc-400 font-regular'>Blockchain-backed <span className='font-medium text-[#2ab589]'>Equity-Tokens</span> unlock access to premium properties.</h1>
                     </div>
                     <div className="right w-[40%] h-full">
