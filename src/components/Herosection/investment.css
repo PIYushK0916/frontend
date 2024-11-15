@@ -1,0 +1,9 @@
+/* CSS file */
+#hover {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#hover:hover {
+    background-color: #fff; /* Darker shade for hover effect */
+    color: black;
+}

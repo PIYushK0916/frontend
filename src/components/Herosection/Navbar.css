@@ -1,0 +1,154 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  /* Navbar styling */
+  .fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Navbar Inner Container */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7rem;
+    height: 4rem;
+  }
+  
+  /* Navbar Sections */
+  .navbar-section {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  
+  .navbar-logo img {
+    height: 3rem;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Navbar Links */
+  .navbar-link,
+  .sign-up-btn {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: gray;
+  }
+  
+  /* Sign-up Button */
+  .sign-up-btn {
+    padding: 0.5rem 1.5rem;
+    color: white;
+    background-color: black;
+    border-radius: 9999px;
+    font-size: 1rem;
+  }
+  
+  /* Dropdown Menu */
+  .navbar-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 8rem;
+    margin-top: 0.5rem;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .navbar-dropdown a {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    color: #333;
+  }
+  
+  .navbar-dropdown a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Show Dropdown on Hover */
+  .group:hover .navbar-dropdown {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1280px) {
+    /* Adjusting navbar padding for smaller screens */
+    .navbar-container {
+      padding: 0 4rem;
+    }
+    
+    .navbar-section {
+      gap: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    /* Further reducing spacing on medium screens */
+    .navbar-container {
+      padding: 0 2rem;
+    }
+  
+    /* Stack navbar items vertically */
+    .navbar-section {
+      gap: 1rem;
+    }
+  
+    /* Resizing logo and font */
+    .navbar-logo img {
+      height: 2.5rem;
+    }
+    .navbar-link,
+    .sign-up-btn {
+      font-size: 0.875rem;
+    }
+  
+    /* Collapsing the navbar to a mobile-friendly version */
+    .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Hiding some links for a minimalistic navbar on mobile */
+    .navbar-section:not(:last-child) {
+      display: none;
+    }
+    
+    /* Centering logo on mobile */
+    .navbar-logo {
+      margin: 0 auto;
+    }
+    
+    /* Scaling sign-up button */
+    .sign-up-btn {
+      font-size: 0.75rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+  
